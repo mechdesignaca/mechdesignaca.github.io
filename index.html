@@ -11,7 +11,7 @@
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.6}
     a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
     header{position:sticky;top:0;z-index:5;background:rgba(0,0,0,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-    nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:850;letter-spacing:.02em;font-size:1.05rem}.brand span{color:var(--green)}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--green)}
+    nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:inline-flex;align-items:center;gap:11px;font-weight:850;letter-spacing:.02em;font-size:1.05rem}.brand-logo{display:block;width:44px;height:44px;object-fit:contain}.brand span{color:var(--green)}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--green)}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:8px;font-weight:750;border:1px solid var(--green);transition:.2s}.btn.primary{background:var(--green);color:#101510}.btn.primary:hover{background:var(--green2);transform:translateY(-2px)}.btn.outline:hover{background:#1b2b1e}
     .hero{padding:94px 0 82px;position:relative;overflow:hidden;background:#000000}
     .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}.eyebrow{display:inline-block;color:var(--green);font-size:.78rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;border:1px solid #35523a;padding:7px 11px;border-radius:99px}
@@ -30,7 +30,7 @@
 <body>
 <header>
   <div class="wrap"><nav aria-label="Main navigation">
-    <a class="brand" href="#home">MECHDESIGN <span>ACADEMY</span></a>
+    <a class="brand" href="#home"><img class="brand-logo" src="assets/1.png" alt="MechDesign Academy logo"> <span>MECHDESIGN <span>ACADEMY</span></span></a>
     <div class="navlinks"><a href="#courses">Courses</a><a href="#learn">What You'll Learn</a><a href="#instructor">Instructor</a><a href="#contact">Contact</a></div>
     <a class="btn outline" href="#contact">Get Started ↗</a>
   </nav></div>
