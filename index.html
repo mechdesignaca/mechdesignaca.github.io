@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn SolidWorks and practical mechanical CAD design with MechDesign Academy. Beginner-friendly lessons in Sinhala and English.">
+  <meta name="theme-color" content="#101512">
+  <title>MechDesign Academy | Learn CAD. Design Your Future.</title>
+  <style>
+    :root{--bg:#0c100e;--panel:#141a16;--panel2:#19221c;--green:#8be36b;--green2:#b1f28f;--text:#f2f5f1;--muted:#a9b5ac;--line:#29352c}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(12,16,14,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:850;letter-spacing:.02em;font-size:1.05rem}.brand span{color:var(--green)}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--green)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:8px;font-weight:750;border:1px solid var(--green);transition:.2s}.btn.primary{background:var(--green);color:#101510}.btn.primary:hover{background:var(--green2);transform:translateY(-2px)}.btn.outline:hover{background:#1b2b1e}
+    .hero{padding:94px 0 82px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 82% 20%,rgba(139,227,107,.12),transparent 35%),linear-gradient(135deg,#0c100e,#101812)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}.eyebrow{display:inline-block;color:var(--green);font-size:.78rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;border:1px solid #35523a;padding:7px 11px;border-radius:99px}
+    h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.03;letter-spacing:-.055em;margin:22px 0}.accent{color:var(--green)}.hero p{color:var(--muted);font-size:1.1rem;max-width:590px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.note{font-size:.85rem!important;margin-top:20px}
+    .cad-card{background:linear-gradient(145deg,#1b2720,#111713);border:1px solid #34483a;border-radius:18px;padding:24px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 25px 70px #0005}.cad-top{display:flex;justify-content:space-between;color:var(--muted);font-size:.8rem}.cad-art{height:190px;display:grid;place-items:center}.cad-art svg{width:100%;max-width:330px}.cad-bottom{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:17px;font-size:.85rem}.cad-bottom strong{display:block;color:var(--green);font-size:1.15rem}
+    section{padding:78px 0}.section-head{max-width:680px;margin-bottom:34px}.kicker{color:var(--green);font-weight:800;text-transform:uppercase;font-size:.78rem;letter-spacing:.15em}h2{font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-.035em;margin:10px 0 14px} .section-head p,.muted{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:var(--panel);border:1px solid var(--line);padding:24px;border-radius:13px}.card .num{font-size:.8rem;color:var(--green);font-weight:850;letter-spacing:.1em}.card h3{margin:12px 0 8px;font-size:1.2rem}.card p{margin:0;color:var(--muted);font-size:.94rem}.pill{display:inline-block;margin-top:17px;padding:5px 9px;border:1px solid #344638;border-radius:99px;color:var(--green);font-size:.77rem}
+    .learn{background:#101612;border-block:1px solid var(--line)}.learn-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start}.checklist{display:grid;grid-template-columns:1fr 1fr;gap:13px}.check{padding:15px;background:var(--panel);border:1px solid var(--line);border-radius:9px}.check b{color:var(--green);margin-right:8px}
+    .about-box{display:grid;grid-template-columns:100px 1fr;gap:22px;align-items:start;background:var(--panel);border:1px solid var(--line);padding:28px;border-radius:14px}.avatar{height:90px;width:90px;border-radius:18px;background:#223627;display:grid;place-items:center;color:var(--green);font-size:2rem;font-weight:900}.about-box p{color:var(--muted);margin-bottom:0}
+    .cta{background:linear-gradient(120deg,#1a2b1e,#121914);border:1px solid #35523a;border-radius:18px;padding:clamp(26px,5vw,52px);display:flex;align-items:center;justify-content:space-between;gap:30px}.cta p{color:var(--muted);max-width:620px}
+    footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:800px){.hero-grid,.learn-grid{grid-template-columns:1fr}.hero{padding-top:65px}.cad-card{min-height:300px}.cards{grid-template-columns:1fr}.navlinks{display:none}.cta{align-items:flex-start;flex-direction:column}}
+    @media(max-width:480px){section{padding:58px 0}.checklist{grid-template-columns:1fr}.about-box{grid-template-columns:1fr}.hero p{font-size:1rem}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap"><nav aria-label="Main navigation">
+    <a class="brand" href="#home">MECHDESIGN <span>ACADEMY</span></a>
+    <div class="navlinks"><a href="#courses">Courses</a><a href="#learn">What You'll Learn</a><a href="#instructor">Instructor</a><a href="#contact">Contact</a></div>
+    <a class="btn outline" href="#contact">Get Started ↗</a>
+  </nav></div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Practical CAD learning</span>
+        <h1>Learn CAD.<br><span class="accent">Design Your Future.</span></h1>
+        <p>Build your SolidWorks skills step by step—from your first sketch to practical 3D models and engineering drawings. Learn in <strong>Sinhala + English</strong>, at a pace that works for you.</p>
+        <div class="actions"><a class="btn primary" href="#courses">Explore Courses ↓</a><a class="btn outline" href="#contact">Enquire About Classes</a></div>
+        <p class="note">For students, beginners, and aspiring mechanical design engineers.</p>
+      </div>
+      <div class="cad-card" aria-label="Mechanical CAD learning illustration">
+        <div class="cad-top"><span>MECHANICAL DESIGN / 01</span><span>3D · CAD</span></div>
+        <div class="cad-art">
+          <svg viewBox="0 0 340 220" role="img" aria-label="Stylized isometric mechanical component">
+            <g fill="none" stroke="#8be36b" stroke-width="1.7" stroke-linejoin="round">
+              <path d="M65 82 L155 30 L269 95 L177 148 Z" fill="#223b28"/>
+              <path d="M65 82 L65 140 L177 204 L177 148 Z" fill="#17251b"/>
+              <path d="M177 148 L269 95 L269 153 L177 204 Z" fill="#1b3020"/>
+              <path d="M107 82 L155 55 L224 94 L177 121 Z" fill="#0e1510"/>
+              <path d="M107 82 L107 118 L177 159 L177 121 Z" fill="#203e27"/>
+              <path d="M177 121 L224 94 L224 130 L177 159 Z" fill="#294a30"/>
+              <path d="M132 68 L132 42 M155 55 L155 30 M201 108 L245 83" stroke-dasharray="4 5" opacity=".7"/>
+              <path d="M49 157 L49 174 M49 165 L65 174 M49 165 L36 158" opacity=".7"/>
+              <circle cx="155" cy="83" r="5" fill="#8be36b"/><circle cx="177" cy="121" r="5" fill="#8be36b"/>
+            </g>
+            <g fill="#b1f28f" font-family="monospace" font-size="10"><text x="13" y="195">X 120.00</text><text x="236" y="190">PART_001</text></g>
+          </svg>
+        </div>
+        <div class="cad-bottom"><div><strong>01</strong>Learn the basics</div><div><strong>02</strong>Build real skills</div><div><strong>03</strong>Design with confidence</div></div>
+      </div>
+    </div>
+  </section>
+  <section id="courses">
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">Our learning path</span><h2>Start simple. Build real design skills.</h2><p>Begin with the fundamentals and progress toward creating practical mechanical designs. Course details and enrolment dates will be announced soon.</p></div>
+      <div class="cards">
+        <article class="card"><span class="num">LEVEL 01</span><h3>SolidWorks for Beginners</h3><p>Get comfortable with the interface, sketches, dimensions, constraints, and your first 3D parts.</p><span class="pill">Beginner friendly</span></article>
+        <article class="card"><span class="num">LEVEL 02</span><h3>Parts & Assemblies</h3><p>Learn core modelling tools, design intent, assembly mates, and how components fit together.</p><span class="pill">Hands-on practice</span></article>
+        <article class="card"><span class="num">LEVEL 03</span><h3>Engineering Drawings</h3><p>Turn 3D models into clear 2D drawings with views, dimensions, and essential drawing practices.</p><span class="pill">Practical application</span></article>
+      </div>
+    </div>
+  </section>
+  <section class="learn" id="learn">
+    <div class="wrap learn-grid">
+      <div><span class="kicker">Skills that matter</span><h2>Learn by designing.</h2><p class="muted">The goal is not just to know which buttons to click. It's to understand how to create useful, well-structured CAD models.</p></div>
+      <div class="checklist">
+        <div class="check"><b>✓</b> 2D sketches & constraints</div><div class="check"><b>✓</b> 3D part modelling</div>
+        <div class="check"><b>✓</b> Design intent & dimensions</div><div class="check"><b>✓</b> Assemblies & mates</div>
+        <div class="check"><b>✓</b> Engineering drawings</div><div class="check"><b>✓</b> Practical design exercises</div>
+      </div>
+    </div>
+  </section>
+  <section id="instructor">
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">Meet your instructor</span><h2>Engineering knowledge. Practical learning.</h2></div>
+      <div class="about-box"><div class="avatar">MD</div><div><h3>Chamith Kawshan</h3><p><strong>Mechanical Engineer · SolidWorks Certified Professional (CSWP)</strong></p><p>Learn from an engineer with hands-on experience in mechanical design and industrial automation. Lessons are designed to connect CAD fundamentals with practical engineering applications, explained in Sinhala and English.</p></div></div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="wrap"><div class="cta"><div><span class="kicker">Take your first step</span><h2>Ready to start learning SolidWorks?</h2><p>Interested in upcoming classes? Get in touch to ask about course content, schedules, and registration.</p></div><a class="btn primary" href="mailto:YOUR-EMAIL@example.com?subject=MechDesign%20Academy%20Course%20Enquiry">Enquire Now ↗</a></div></div>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> MechDesign Academy</span><span>Learn CAD. Design Your Future.</span></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
