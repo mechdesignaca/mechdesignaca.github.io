@@ -16,7 +16,7 @@
     .hero{padding:94px 0 82px;position:relative;overflow:hidden;background:#000000}
     .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}.eyebrow{display:inline-block;color:var(--green);font-size:.78rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;border:1px solid #35523a;padding:7px 11px;border-radius:99px}
     h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.03;letter-spacing:-.055em;margin:22px 0}.accent{color:var(--green)}.hero p{color:var(--muted);font-size:1.1rem;max-width:590px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.note{font-size:.85rem!important;margin-top:20px}
-    .cad-card{background:#080808;border:1px solid #34483a;border-radius:18px;padding:24px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 25px 70px #0005}.cad-top{display:flex;justify-content:space-between;color:var(--muted);font-size:.8rem}.cad-art{height:190px;display:grid;place-items:center}.cad-art svg{width:100%;max-width:330px}.cad-bottom{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:17px;font-size:.85rem}.cad-bottom strong{display:block;color:var(--green);font-size:1.15rem}
+    .cad-card{background:transparent;border:0;border-radius:0;padding:0;min-height:0;display:flex;align-items:center;justify-content:center;box-shadow:none}.cad-top{display:none}.cad-art{display:none}.cad-art svg{width:100%;max-width:330px}.hero-logo{display:block;width:min(100%,420px);max-height:420px;object-fit:contain}.cad-bottom{display:none}.cad-bottom strong{display:block;color:var(--green);font-size:1.15rem}
     section{padding:78px 0}.section-head{max-width:680px;margin-bottom:34px}.kicker{color:var(--green);font-weight:800;text-transform:uppercase;font-size:.78rem;letter-spacing:.15em}h2{font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-.035em;margin:10px 0 14px} .section-head p,.muted{color:var(--muted)}
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:var(--panel);border:1px solid var(--line);padding:24px;border-radius:13px}.card .num{font-size:.8rem;color:var(--green);font-weight:850;letter-spacing:.1em}.card h3{margin:12px 0 8px;font-size:1.2rem}.card p{margin:0;color:var(--muted);font-size:.94rem}.pill{display:inline-block;margin-top:17px;padding:5px 9px;border:1px solid #344638;border-radius:99px;color:var(--green);font-size:.77rem}
     .learn{background:#000000;border-block:1px solid var(--line)}.learn-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start}.checklist{display:grid;grid-template-columns:1fr 1fr;gap:13px}.check{padding:15px;background:var(--panel);border:1px solid var(--line);border-radius:9px}.check b{color:var(--green);margin-right:8px}
@@ -45,26 +45,7 @@
         <div class="actions"><a class="btn primary" href="#courses">Explore Courses ↓</a><a class="btn outline" href="#contact">Enquire About Classes</a></div>
         <p class="note">For students, beginners, and aspiring mechanical design engineers.</p>
       </div>
-      <div class="cad-card" aria-label="Mechanical CAD learning illustration">
-        <div class="cad-top"><span>MECHANICAL DESIGN / 01</span><span>3D · CAD</span></div>
-        <div class="cad-art">
-          <svg viewBox="0 0 340 220" role="img" aria-label="Stylized isometric mechanical component">
-            <g fill="none" stroke="#76B900" stroke-width="1.7" stroke-linejoin="round">
-              <path d="M65 82 L155 30 L269 95 L177 148 Z" fill="#223b28"/>
-              <path d="M65 82 L65 140 L177 204 L177 148 Z" fill="#17251b"/>
-              <path d="M177 148 L269 95 L269 153 L177 204 Z" fill="#1b3020"/>
-              <path d="M107 82 L155 55 L224 94 L177 121 Z" fill="#0e1510"/>
-              <path d="M107 82 L107 118 L177 159 L177 121 Z" fill="#203e27"/>
-              <path d="M177 121 L224 94 L224 130 L177 159 Z" fill="#294a30"/>
-              <path d="M132 68 L132 42 M155 55 L155 30 M201 108 L245 83" stroke-dasharray="4 5" opacity=".7"/>
-              <path d="M49 157 L49 174 M49 165 L65 174 M49 165 L36 158" opacity=".7"/>
-              <circle cx="155" cy="83" r="5" fill="#76B900"/><circle cx="177" cy="121" r="5" fill="#76B900"/>
-            </g>
-            <g fill="#8FD400" font-family="monospace" font-size="10"><text x="13" y="195">X 120.00</text><text x="236" y="190">PART_001</text></g>
-          </svg>
-        </div>
-        <div class="cad-bottom"><div><strong>01</strong>Learn the basics</div><div><strong>02</strong>Build real skills</div><div><strong>03</strong>Design with confidence</div></div>
-      </div>
+      <div class="cad-card" aria-label="MechDesign Academy logo"><img class="hero-logo" src="assets/1.png" alt="MechDesign Academy logo"></div>
     </div>
   </section>
   <section id="courses">
